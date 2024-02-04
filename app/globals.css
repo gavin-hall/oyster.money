@@ -1,3 +1,106 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* Calibre font faces */
+  @font-face {
+    font-family: 'Calibre';
+    src: url('/Calibre_Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Calibre';
+    src: url('/Calibre_Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Calibre';
+    src: url('/Calibre_Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Calibre';
+    src: url('/Calibre_Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Calibre';
+    src: url('/Calibre_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* Founders Grotesk font faces */
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('/FoundersGrotesk-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('/FoundersGrotesk-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('/FoundersGrotesk-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('/FoundersGrotesk-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('/FoundersGrotesk-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  a[class*='animated_underline'] {
+    @apply relative;
+  }
+  /* a[class*='_link']:before {
+    content: '';
+    transform-origin: 100% 50%;
+    transform: scale3d(1, 1, 1);
+    transition: transform 0.3s;
+    @apply absolute w-full bg-current h-[2px] top-full left-0 pointer-events-none opacity-10;
+  } */
+  /* a[class*='_link']:hover:before {
+    transform-origin: 0% 50%;
+    transform: scale3d(0, 1, 1);
+    background: currentColor;
+    opacity: 0.2;
+  } */
+  a[class*='animated_underline']:after {
+    content: '';
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+    @apply absolute w-full h-[2px] top-full left-0 pointer-events-none bg-gradient-to-br from-[#9747FF] via-[#EEB4EF] to-[#F7C386];
+  }
+
+  a[class*='animated_underline']:hover:after {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+  }
+}

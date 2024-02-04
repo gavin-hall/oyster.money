@@ -1,7 +1,7 @@
-# Next.js + Contentlayer
+# Oyster Money sales website
 
-A template with Next.js 13 app dir, Contentlayer, Tailwind CSS and dark mode.
-
-https://next-contentlayer.vercel.app
+Initially forked from https://vercel.com/new/templates/next.js/nextjs-contentlayer
 
 
+- ContentLayer (mdx)
+- Tailwind
