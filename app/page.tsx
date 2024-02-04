@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="">
       <div className="absolute left-[50%] top-[0rem] z-0 ml-[-273px] h-[546px] w-[602px]">
-        <Image src="/grid.png" width="602" height="546" decorative />
+        <Image src="/grid.png" width="602" height="546" alt="" />
       </div>{' '}
       <div className="absolute left-[50%] top-[-20rem] z-0 ml-[-20rem] h-[40rem] w-[40rem] rounded-full bg-[#D1A8FF] blur-3xl opacity-5"></div>
       <div className="relative z-10">
