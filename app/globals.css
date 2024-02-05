@@ -3,104 +3,74 @@
 @tailwind utilities;
 
 @layer base {
-  /* Calibre font faces */
-  @font-face {
-    font-family: 'Calibre';
-    src: url('/Calibre_Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
   }
 
-  @font-face {
-    font-family: 'Calibre';
-    src: url('/Calibre_Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-  }
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
 
-  @font-face {
-    font-family: 'Calibre';
-    src: url('/Calibre_Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-  }
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
 
-  @font-face {
-    font-family: 'Calibre';
-    src: url('/Calibre_Semibold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-  }
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
 
-  @font-face {
-    font-family: 'Calibre';
-    src: url('/Calibre_Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-  }
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
 
-  /* Founders Grotesk font faces */
-  @font-face {
-    font-family: 'Founders Grotesk';
-    src: url('/FoundersGrotesk-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-  }
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
 
-  @font-face {
-    font-family: 'Founders Grotesk';
-    src: url('/FoundersGrotesk-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-  }
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
 
-  @font-face {
-    font-family: 'Founders Grotesk';
-    src: url('/FoundersGrotesk-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-  }
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
 
-  @font-face {
-    font-family: 'Founders Grotesk';
-    src: url('/FoundersGrotesk-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-  }
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
 
-  @font-face {
-    font-family: 'Founders Grotesk';
-    src: url('/FoundersGrotesk-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
   }
+}
 
-  a[class*='animated_underline'] {
-    @apply relative;
+@layer base {
+  * {
+    @apply border-border;
   }
-  /* a[class*='_link']:before {
-    content: '';
-    transform-origin: 100% 50%;
-    transform: scale3d(1, 1, 1);
-    transition: transform 0.3s;
-    @apply absolute w-full bg-current h-[2px] top-full left-0 pointer-events-none opacity-10;
-  } */
-  /* a[class*='_link']:hover:before {
-    transform-origin: 0% 50%;
-    transform: scale3d(0, 1, 1);
-    background: currentColor;
-    opacity: 0.2;
-  } */
-  a[class*='animated_underline']:after {
-    content: '';
-    transform-origin: 100% 50%;
-    transform: scale3d(0, 1, 1);
-    transition: transform 0.3s;
-    @apply absolute w-full h-[2px] top-full left-0 pointer-events-none bg-gradient-to-br from-[#9747FF] via-[#EEB4EF] to-[#F7C386];
-  }
-
-  a[class*='animated_underline']:hover:after {
-    transform-origin: 0% 50%;
-    transform: scale3d(1, 1, 1);
+  body {
+    @apply bg-background text-foreground;
   }
 }

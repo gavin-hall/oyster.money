@@ -1,6 +1,6 @@
 import { allPosts } from '@/.contentlayer/generated'
 import Image from 'next/image'
-
+import AppUIInvoice from '@/components/app-ui/invoice'
 export default function Home() {
   return (
     <div className="">
@@ -15,6 +15,11 @@ export default function Home() {
             Easily handle contracts, invoicing, expenses and reporting.
           </div>
         </div>
+
+        {/* <div className="mx-auto max-w-screen-lg">
+          <AppUIInvoice />
+        </div> */}
+
         {/* <div className="prose dark:prose-invert">
           {allPosts.map(post => (
             <article key={post._id}>
