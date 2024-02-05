@@ -2,9 +2,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 
-const AppUIInvoice = () => {
+const AppUIInvoiceLight = () => {
   return (
-    <div className="z-10 relative bg-gray-800">
+    <div className="z-10 relative bg-white text-gray-400">
       <div className="px-16 py-8 flex items-center justify-between border-t-4 border-b border-gray-700">
         <div className="flex items-center gap-4">
           <div className="bg-red text-inherit rounded-md">Late</div>
@@ -16,8 +16,8 @@ const AppUIInvoice = () => {
         </div>
       </div>
       <div className="flex items-center justify-end px-16 py-8">
-        <div className="relative w-24 h-12 md:w-32 md:h-16 text-white">
-          <svg width="144" height="36" viewBox="0 0 144 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="">
+        <div className="relative w-24 h-12 md:w-32 md:h-16 text-gray-700">
+          <svg width="144" height="36" viewBox="0 0 144 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M18 1L18.3414 15.9543L23.5199 1.92111L18.9871 16.176L28.4416 4.58461L19.5259 16.5953L32.2318 8.70188L19.8993 17.1669L34.4798 13.8267L20.0669 17.8287L34.9419 19.4038L20.0105 18.5091L33.5681 24.8288L19.7363 19.1344L30.5073 29.5138L19.2739 19.6367L26.0911 32.9511L18.6734 19.9616L20.7981 34.7681L18 20.074L15.2019 34.7681L17.3266 19.9616L9.90889 32.9511L16.7261 19.6367L5.49269 29.5138L16.2637 19.1344L2.43185 24.8288L15.9895 18.5091L1.05806 19.4038L15.9331 17.8287L1.5202 13.8267L16.1007 17.1669L3.76817 8.70188L16.4741 16.5953L7.55838 4.58461L17.0129 16.176L12.4801 1.92111L17.6586 15.9543L18 1Z"
               fill="currentColor"
@@ -51,8 +51,8 @@ const AppUIInvoice = () => {
           </svg>
         </div>
       </div>
-      <div className="px-16 py-8 text-white">
-        <div className="text-4xl font-light mb-4 text-white">
+      <div className="px-16 py-8 text-gray-700">
+        <div className="text-4xl font-light mb-4">
           Invoice <span className="text-medium">08204</span>
         </div>
         <div className="">
@@ -62,11 +62,11 @@ const AppUIInvoice = () => {
       <div className="grid grid-cols-2 gap-8 px-16 py-8 items-start">
         <div className="col-span-1 grid grid-cols-1 md:grid-cols-7 gap-4">
           <div className="md:col-span-3 text-sm">Invoice for</div>
-          <div className="md:col-span-4 text-white">Allied Materials and Allied Products Corporation</div>
+          <div className="md:col-span-4 text-gray-700">Allied Materials and Allied Products Corporation</div>
         </div>
         <div className="col-span-1 grid grid-cols-1 md:grid-cols-7 gap-4">
           <div className="md:col-span-3 text-sm">Invoice from</div>
-          <div className="md:col-span-4 text-white">
+          <div className="md:col-span-4 text-gray-700">
             Magnet Co, LLC
             <br />
             1806 River Heights Lane
@@ -84,11 +84,11 @@ const AppUIInvoice = () => {
       <div className="grid grid-cols-2 gap-8 px-16 py-8 items-start">
         <div className="col-span-1 grid grid-cols-1 md:grid-cols-7 gap-4">
           <div className="md:col-span-3 text-sm">Issue date</div>
-          <div className="md:col-span-4 text-white">02/01/2025</div>
+          <div className="md:col-span-4 text-gray-700">02/01/2025</div>
         </div>
         <div className="col-span-1 grid grid-cols-1 md:grid-cols-7 gap-4">
           <div className="md:col-span-3 text-sm">Due date</div>
-          <div className="md:col-span-4 text-white">03/01/2025 (Net 30)</div>
+          <div className="md:col-span-4 text-gray-700">03/01/2025 (Net 30)</div>
         </div>
       </div>
       <div className="px-12 py-8 flex flex-col gap-1 text-sm">
@@ -98,20 +98,20 @@ const AppUIInvoice = () => {
           <div className="hidden md:flex flex-none w-24">Rate</div>
           <div className="flex-none w-24 flex justify-end">Amount</div>
         </div>
-        <div className="flex items-start justify-between gap-4 px-4 py-2 bg-gray-700 text-white rounded-md">
+        <div className="flex items-start justify-between gap-4 px-4 py-2 bg-gray-200 text-gray-700 rounded-md">
           <div className="flex-grow">[0422] Allied Springbok PPC Retainer - 01/08/2024 - PPC Management / Reisto Belovich: December 2023 Report</div>
           <div className="hidden md:flex flex-none w-24">12</div>
           <div className="hidden md:flex flex-none w-24">$200</div>
           <div className="flex-none w-24 flex justify-end">$324,000,000</div>
         </div>
 
-        <div className="flex items-start justify-between gap-4 px-4 py-2 bg-gray-700 text-white rounded-md">
+        <div className="flex items-start justify-between gap-4 px-4 py-2 bg-gray-200 text-gray-700 rounded-md">
           <div className="flex-grow">[0422] Allied Springbok PPC Retainer - 01/08/2024 - PPC Management / Reisto Belovich: December 2023 Report</div>
           <div className="hidden md:flex flex-none w-24">12</div>
           <div className="hidden md:flex flex-none w-24">$200</div>
           <div className="flex-none w-24 flex justify-end">$324,000,000</div>
         </div>
-        <div className="flex items-start justify-between gap-4 px-4 py-2 bg-gray-700 text-white rounded-md">
+        <div className="flex items-start justify-between gap-4 px-4 py-2 bg-gray-200 text-gray-700 rounded-md">
           <div className="flex-grow">[0422] Allied Springbok PPC Retainer - 01/08/2024 - PPC Management / Reisto Belovich: December 2023 Report</div>
           <div className="hidden md:flex flex-none w-24">12</div>
           <div className="hidden md:flex flex-none w-24">$200</div>
@@ -122,7 +122,7 @@ const AppUIInvoice = () => {
           <div className="flex-none md:w-[20rem]">
             <div className="grid grid-cols-1 md:grid-cols-7 gap-1 md:gap-4">
               <div className="md:col-span-3">Subtotal</div>
-              <div className="md:col-span-4 text-white flex md:justify-end">$324,000,000</div>
+              <div className="md:col-span-4 text-gray-700 flex md:justify-end">$324,000,000</div>
             </div>
           </div>
         </div>
@@ -131,7 +131,7 @@ const AppUIInvoice = () => {
           <div className="flex-none md:w-[20rem]">
             <div className="grid grid-cols-1 md:grid-cols-7 gap-1 md:gap-4">
               <div className="md:col-span-3">Tax (0%)</div>
-              <div className="md:col-span-4 text-white flex md:justify-end">$0</div>
+              <div className="md:col-span-4 text-gray-700 flex md:justify-end">$0</div>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@ const AppUIInvoice = () => {
           <div className="flex-none md:w-[20rem]">
             <div className="grid grid-cols-1 md:grid-cols-7 gap-1 md:gap-4">
               <div className="md:col-span-3">Paid</div>
-              <div className="md:col-span-4 text-white flex md:justify-end">$0</div>
+              <div className="md:col-span-4 text-gray-700 flex md:justify-end">$0</div>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@ const AppUIInvoice = () => {
           <div className="flex-none md:w-[20rem]">
             <div className="grid grid-cols-1 md:grid-cols-7 gap-1 md:gap-4">
               <div className="md:col-span-3">Total due</div>
-              <div className="md:col-span-4 text-white flex md:justify-end text-2xl">$324,000,000</div>
+              <div className="md:col-span-4 text-gray-700 flex md:justify-end text-2xl">$324,000,000</div>
             </div>
           </div>
         </div>
@@ -158,4 +158,4 @@ const AppUIInvoice = () => {
   )
 }
 
-export default AppUIInvoice
+export default AppUIInvoiceLight

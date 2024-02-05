@@ -18,9 +18,14 @@ const config = {
         secondary: ['Founders Grotesk', 'sans-serif']
       },
       colors: {
-        darkest: '#0F0F0F',
-        darker: '#121212',
-        dark: '#19181A',
+        'gray-900': '#0F0F0F',
+        'gray-800': '#121212',
+        'gray-700': '#19181A',
+        'gray-400': '#686868',
+        'gray-300': '#939393',
+        'gray-200': '#F6F5F8',
+        'yellow-500': '#ECBE65',
+        'green-500': '#5FD27E',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

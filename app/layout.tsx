@@ -13,8 +13,8 @@ interface RootLayoutProps {
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
-    <html lang="en" className="text-[17px]">
-      <body className={`min-h-screen bg-darkest text-[#939393] font-primary antialiased `}>
+    <html lang="en" className="text-[16px]">
+      <body className={`min-h-screen bg-gray-900 text-gray-300 font-primary antialiased `}>
         <div className="mx-auto max-w-screen-xl px-4 py-10">
           <Header />
           <main>{children}</main>
